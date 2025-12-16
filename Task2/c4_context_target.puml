@@ -1,0 +1,49 @@
+@startuml C4 Context - Целевая архитектура системы Медикаменте
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title C4 Context - Целевая архитектура системы Медикаменте
+
+Person(patient, "Пациент", "Пользователь системы")
+Person(doctor, "Врач", "Медицинский персонал")
+Person(reception, "Ресепшен", "Административный персонал")
+Person(cashier, "Кассир", "Финансовый персонал")
+
+System(medikamente, "Система Медикаменте", "Автоматизированная система управления медицинским центром с поддержкой конфиденциальности данных. Включает: Портал для клиентов, Портал для сотрудников, CRM, Платёжный шлюз")
+
+System_Ext(lab, "Лаборатория анализов", "Внешняя система для получения результатов анализов")
+System_Ext(payment, "Платёжный шлюз", "Внешняя система для обработки платежей")
+System_Ext(accounting, "1С:Бухгалтерия", "Внешняя система 1С:Бухгалтерия и 1С:Торговля и склад")
+
+' Связи с пользователями
+Rel(patient, medikamente, "Запись к врачу, Просмотр данных, Получение результатов")
+Rel(doctor, medikamente, "Работа с пациентами, Ведение медицинских карт, Просмотр анализов")
+Rel(reception, medikamente, "Управление записями, Работа с расписанием")
+Rel(cashier, medikamente, "Обработка платежей, Формирование чеков")
+
+' Связи с внешними системами
+Rel(medikamente, lab, "Получение результатов анализов", "TLS 1.3 + API Gateway")
+Rel(medikamente, payment, "Обработка платежей", "TLS 1.3 + Tokenization")
+Rel(medikamente, accounting, "Синхронизация данных", "TLS 1.3")
+
+' Блоки Privacy by Design
+System(iam, "Управление идентификацией и доступом", "Keycloak + RBAC/ABAC", $tags="PrivacyByDesign")
+System(classification, "Классификация и тегирование данных", "Apache Atlas / Collibra", $tags="PrivacyByDesign")
+System(encryption, "Слой шифрования", "AES-256 в покое, TLS 1.3 при передаче", $tags="PrivacyByDesign")
+System(audit, "Аудит и мониторинг", "ELK Stack + Prometheus", $tags="PrivacyByDesign")
+System(lineage, "Отслеживание потоков данных", "Apache Atlas / Collibra", $tags="PrivacyByDesign")
+System(analytics, "Хранилище данных и аналитика", "ClickHouse + BI Tools, ML с сохранением конфиденциальности", $tags="PrivacyByDesign")
+
+' Связи системы с блоками Privacy by Design
+Rel(medikamente, iam, "использует", $tags="PrivacyByDesign")
+Rel(medikamente, classification, "использует", $tags="PrivacyByDesign")
+Rel(medikamente, encryption, "использует", $tags="PrivacyByDesign")
+Rel(medikamente, audit, "использует", $tags="PrivacyByDesign")
+Rel(medikamente, lineage, "использует", $tags="PrivacyByDesign")
+Rel(medikamente, analytics, "использует", $tags="PrivacyByDesign")
+
+SHOW_LEGEND()
+
+@enduml
+
