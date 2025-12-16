@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.7">
+  <diagram id="dZBFEZ6gOVSJRD9vXiOO" name="DFD - Процесс обработки платежей">
+    <mxGraphModel dx="389" dy="-470" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Пациент" vertex="1">
+          <mxGeometry height="60" width="30" x="1600" y="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Кассир" vertex="1">
+          <mxGeometry height="60" width="30" x="1600" y="1790" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Бухгалтерия" vertex="1">
+          <mxGeometry height="60" width="30" x="1600" y="2220" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="ККМ" vertex="1">
+          <mxGeometry height="60" width="30" x="1600" y="1940" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="1.0&#xa;Приём&#xa;платежа" vertex="1">
+          <mxGeometry height="60" width="120" x="1950" y="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="2.0&#xa;Обработка&#xa;платежа" vertex="1">
+          <mxGeometry height="60" width="120" x="1950" y="1845" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="3.0&#xa;Учёт в&#xa;1С" vertex="1">
+          <mxGeometry height="60" width="120" x="1950" y="2020" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="4.0&#xa;Формирование&#xa;отчётов" vertex="1">
+          <mxGeometry height="60" width="120" x="1950" y="2220" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-9" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="D1&#xa;Учёт&#xa;платежей" vertex="1">
+          <mxGeometry height="80" width="100" x="2250" y="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-10" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="D2&#xa;1С:Бухгалтерия" vertex="1">
+          <mxGeometry height="80" width="100" x="2270" y="1950" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-11" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="D3&#xa;Финансовые&#xa;отчёты" vertex="1">
+          <mxGeometry height="80" width="100" x="2270" y="2210" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-12" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="D4&#xa;Договоры" vertex="1">
+          <mxGeometry height="80" width="100" x="1780" y="1790" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-13" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-1" style="endArrow=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="PDgcVpV7RW9tfHpVC-Cl-5" value="Платёж">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1740" as="sourcePoint" />
+            <mxPoint x="2000" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-14" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-2" style="endArrow=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="PDgcVpV7RW9tfHpVC-Cl-5" value="Приём платежа">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1840" as="sourcePoint" />
+            <mxPoint x="2010" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-15" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-5" style="endArrow=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="PDgcVpV7RW9tfHpVC-Cl-6" value="Данные о платеже">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1740" as="sourcePoint" />
+            <mxPoint x="2040" y="1840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-16" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-5" style="endArrow=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="PDgcVpV7RW9tfHpVC-Cl-9" value="Сохранение платежа">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1740" as="sourcePoint" />
+            <mxPoint x="2000" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-17" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-12" style="endArrow=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="PDgcVpV7RW9tfHpVC-Cl-5" value="Данные договора">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="2300" y="2220" as="sourcePoint" />
+            <mxPoint x="2010" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-18" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-6" style="endArrow=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="PDgcVpV7RW9tfHpVC-Cl-4" value="Обработка через ККМ">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1740" as="sourcePoint" />
+            <mxPoint x="2000" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-19" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-4" style="endArrow=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="PDgcVpV7RW9tfHpVC-Cl-6" value="Чек из ККМ">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1740" as="sourcePoint" />
+            <mxPoint x="2000" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-20" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-6" style="endArrow=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="PDgcVpV7RW9tfHpVC-Cl-7" value="Данные для 1С">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1740" as="sourcePoint" />
+            <mxPoint x="2000" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-21" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-7" style="endArrow=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" target="PDgcVpV7RW9tfHpVC-Cl-10" value="Сохранение в 1С">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1740" as="sourcePoint" />
+            <mxPoint x="2000" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-22" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-10" style="endArrow=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="PDgcVpV7RW9tfHpVC-Cl-8" value="Данные для отчётов">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2300" y="1840" as="sourcePoint" />
+            <mxPoint x="2010" y="2280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-23" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-9" style="endArrow=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="PDgcVpV7RW9tfHpVC-Cl-8" value="Данные для отчётов">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2300" y="1640" as="sourcePoint" />
+            <mxPoint x="2010" y="2280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-24" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-8" style="endArrow=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="PDgcVpV7RW9tfHpVC-Cl-11" value="Сохранение отчётов">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1740" as="sourcePoint" />
+            <mxPoint x="2000" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-25" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-8" style="endArrow=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="PDgcVpV7RW9tfHpVC-Cl-3" value="Отчёты">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1950" y="1740" as="sourcePoint" />
+            <mxPoint x="2000" y="1690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacingLeft=10;" value="TLS 1.3&#xa;Шифрование при передаче&#xa;PCI DSS compliance" vertex="1">
+          <mxGeometry height="60" width="250" x="2590" y="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;verticalAlign=top;spacingLeft=10;" value="AES-256&#xa;Шифрование в покое&#xa;Database Encryption" vertex="1">
+          <mxGeometry height="60" width="250" x="2590" y="1740" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacingLeft=10;" value="Теги:&#xa;confidentiality:critical&#xa;category:financial&#xa;pci:required" vertex="1">
+          <mxGeometry height="70" width="250" x="2590" y="1835" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacingLeft=10;" value="RBAC&#xa;Контроль доступа&#xa;Только кассиры и бухгалтерия" vertex="1">
+          <mxGeometry height="60" width="250" x="2590" y="1940" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacingLeft=10;" value="Полный аудит&#xa;Логирование всех операций&#xa;Требования ФНС" vertex="1">
+          <mxGeometry height="70" width="250" x="2590" y="2030" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;spacingLeft=10;" value="Tokenization&#xa;Токенизация платёжных данных" vertex="1">
+          <mxGeometry height="50" width="250" x="2590" y="2140" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-32" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-26" style="endArrow=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#d6b656;dashed=1;" target="PDgcVpV7RW9tfHpVC-Cl-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2450" y="1670" as="sourcePoint" />
+            <mxPoint x="2010" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-33" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-27" style="endArrow=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#d6b656;dashed=1;" target="PDgcVpV7RW9tfHpVC-Cl-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2450" y="1770" as="sourcePoint" />
+            <mxPoint x="2250" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-34" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-28" style="endArrow=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#82b366;dashed=1;" target="PDgcVpV7RW9tfHpVC-Cl-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2450" y="1875" as="sourcePoint" />
+            <mxPoint x="2250" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-35" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-29" style="endArrow=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#82b366;dashed=1;" target="PDgcVpV7RW9tfHpVC-Cl-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2450" y="1970" as="sourcePoint" />
+            <mxPoint x="2070" y="1650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-36" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-30" style="endArrow=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#82b366;dashed=1;" target="PDgcVpV7RW9tfHpVC-Cl-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2450" y="2075" as="sourcePoint" />
+            <mxPoint x="2070" y="2050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-37" edge="1" parent="1" source="PDgcVpV7RW9tfHpVC-Cl-31" style="endArrow=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;strokeColor=#82b366;dashed=1;" target="PDgcVpV7RW9tfHpVC-Cl-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2450" y="2165" as="sourcePoint" />
+            <mxPoint x="2070" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-38" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" value="DFD - Процесс обработки платежей" vertex="1">
+          <mxGeometry height="30" width="400" x="1950" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-39" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" value="Легенда:" vertex="1">
+          <mxGeometry height="30" width="100" x="1580" y="2338" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Процесс (1.0, 2.0...)" vertex="1">
+          <mxGeometry height="40" width="120" x="1580" y="2378" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-41" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#000000;" value="Хранилище данных (D1, D2...)" vertex="1">
+          <mxGeometry height="50" width="120" x="1720" y="2378" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-42" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" value="Внешняя сущность" vertex="1">
+          <mxGeometry height="60" width="30" x="1860" y="2368" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-43" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeColor=#000000;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1920" y="2398" as="sourcePoint" />
+            <mxPoint x="1990" y="2398" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-44" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Поток данных" vertex="1">
+          <mxGeometry height="30" width="100" x="2000" y="2383" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Шифрование" vertex="1">
+          <mxGeometry height="40" width="120" x="1580" y="2458" as="geometry" />
+        </mxCell>
+        <mxCell id="PDgcVpV7RW9tfHpVC-Cl-46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Контроль доступа" vertex="1">
+          <mxGeometry height="40" width="120" x="1720" y="2458" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
